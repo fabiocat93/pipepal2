@@ -19,7 +19,7 @@ jobs:
         cache: poetry
     - name: Install dependencies
       run: |
-        poetry install --with dev,docs 
+        poetry install --with dev
     - name: Run tests
       id: run-tests
       run: >
@@ -50,5 +50,5 @@ jobs:
         python-version: '3.11'
         cache: poetry
     - run: |
-        poetry install
+        poetry install --with dev 
         poetry run mypy .
