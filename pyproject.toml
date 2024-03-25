@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pipepal"
 version = "0.0.0"
-description = "PipePal is a Python package that simplifies building pipelines for speech and voice analysis (for now)."
+description = "PipePal is a Python package that simplifies building pipelines for speech and voice analysis (and maybe more in the future)."
 authors = [
     "fabiocat <fabiocat@mit.edu>",
 ]
