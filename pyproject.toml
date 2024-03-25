@@ -1,21 +1,40 @@
 [tool.poetry]
-name = "app-name"
-version = "0.1.0"
-description = "A beautiful description."
-authors = ["Reinder Vos de Wael <reinder.vosdewael@childmind.org>"]
-license = "LGPL-2.1"
+name = "pipepal"
+version = "0.0.0"
+description = "PipePal is a Python package that simplifies building pipelines for speech and voice analysis (for now)."
+authors = [
+    "fabiocat <fabiocat@mit.edu>",
+]
+maintainers = [
+    "fabiocat93 <fabiocat@mit.edu>",
+]
+license = "Apache-2.0"
 readme = "README.md"
-packages = [{include = "APP_NAME", from = "src"}]
+homepage = "https://github.com/sensein/pipepal"
+repository = "https://github.com/sensein/pipepal"
+# documentation = ""
+keywords = ["pipeline", "speech", "audio", "voice"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3.10",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+  "Topic :: Multimedia :: Sound/Audio :: Analysis",
+]
+packages = [{include = "pipepal", from = "src"}]
 
 [tool.poetry.dependencies]
-python = "~3.11"
+python = "^3.10"
 
+[tool.poetry.group.dev]
+optional = true
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.0.2"
-mypy = "^1.8.0"
-pre-commit = "^3.6.2"
-pytest-cov = "^4.1.0"
-ruff = "^0.3.0"
+pytest = "^8.1.1"
+mypy = "^1.9.0"
+pre-commit = "^3.7.0"
+pytest-cov = "^5.0.0"
+ruff = "^0.3.4"
 
 [tool.poetry.group.docs.dependencies]
 pdoc = "^14.4.0"
@@ -58,7 +77,7 @@ exclude = [
 line-length = 88
 indent-width = 4
 src = ["src"]
-target-version = "py311"
+target-version = "py310"
 
 [tool.ruff.lint]
 select = ["ANN", "D", "E", "F", "I"]
@@ -82,6 +101,8 @@ indent-style = "space"
 skip-magic-trailing-comma = false
 line-ending = "auto"
 
+[tool.poetry-dynamic-versioning]
+enable = true
 [build-system]
-requires = ["poetry-core>=1.2.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
