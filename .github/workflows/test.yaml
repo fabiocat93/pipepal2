@@ -50,12 +50,14 @@ jobs:
           --junitxml=pytest.xml \
           --cov-report=term-missing:skip-covered \
           --cov-report=xml:coverage.xml \
-          --cov=src tests \
+          --cov=src src/tests \
           --log-level=DEBUG \
           --verbose
       shell: bash
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v4
+      with:
+      token: ${{ secrets.CODECOV_TOKEN }}
 
   ruff:
     runs-on: ${{ matrix.os }}

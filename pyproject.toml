@@ -44,7 +44,7 @@ pythonpath = [
   "src"
 ]
 testpaths = [
-  "tests"
+  "src/tests"
 ]
 
 [tool.mypy]
@@ -93,7 +93,7 @@ dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 convention = "google"
 
 [tool.ruff.lint.per-file-ignores]
-"tests/**/*.py" = []
+"src/tests/**/*.py" = []
 
 [tool.ruff.format]
 quote-style = "double"

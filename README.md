@@ -1,7 +1,7 @@
 # Pipepal
 
 [![Build](https://github.com/sensein/pipepal/actions/workflows/test.yaml/badge.svg?branch=main)](https://github.com/sensein/pipepal/actions/workflows/test.yaml?query=branch%3Amain)
-[![codecov](https://codecov.io/gh/sensein/pipepal/branch/main/graph/badge.svg?token=22HWWFWPW5)](https://codecov.io/gh/sensein/pipepal)
+[![codecov](https://codecov.io/gh/sensein/pipepal/branch/main/graph/badge.svg?token=REPLACE_TOKEN_HERE)](https://codecov.io/gh/sensein/pipepal)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 [![PyPI](https://img.shields.io/pypi/v/pipepal.svg)](https://pypi.org/project/pipepal/)
