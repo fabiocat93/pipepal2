@@ -1,5 +1,5 @@
 .ruff_cache
-docs_build/
+docs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

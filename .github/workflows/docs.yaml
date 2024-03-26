@@ -47,12 +47,12 @@ jobs:
     - name: Build docs
       run: |
         APP_MODULE_NAME=$(ls src -U | head -1)  # Get the first module name in the src directory
-        poetry run pdoc src/"$APP_MODULE_NAME" -o docs_build -t docs/pdoc-theme --docformat google
-        touch docs_build/.nojekyll
+        poetry run pdoc src/"$APP_MODULE_NAME" -o docs -t docs_style/pdoc-theme --docformat google
+        touch docs/.nojekyll
       shell: bash
     - name: Publish Docs
       id: deployment
       if: ${{ matrix.deploy }}
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        folder: docs_build
+        folder: docs
