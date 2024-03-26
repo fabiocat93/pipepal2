@@ -2,6 +2,8 @@ name: Build and publish docs
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 on:
   workflow_run:
@@ -20,7 +22,16 @@ jobs:
       matrix:
         os: [ubuntu-latest] #, macos-latest, windows-latest
         python-version: ["3.11", "3.10"]
-        deploy: [true]
+        include:
+        - os: ubuntu-latest
+        python-version: "3.11"
+        deploy: false  
+      - os: ubuntu-latest
+        python-version: "3.10"
+        deploy: true # Only deploy from this configuration
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
     - uses: actions/checkout@v4
       with:  # no need for the history
@@ -49,6 +60,6 @@ jobs:
       shell: bash
     - name: Publish Docs
       if: ${{ matrix.deploy }}
-      uses: JamesIves/github-pages-deploy-action@v4
+      uses: actions/deploy-pages@v4
       with:
         folder: docs_build
