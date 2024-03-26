@@ -11,4 +11,4 @@ def test_hello_world(capsys: CaptureFixture) -> None:
     """
     hello_world()
     captured = capsys.readouterr()  # Captures the output of hello_world()
-    assert "Hello World!\n" == captured.out
+    assert "Hello World!!\n" == captured.out
