@@ -1,16 +1,15 @@
-<!---
-[![DOI]()]()
-[![Read the Docs](https://readthedocs.org/projects/pipepal/badge/)](https://pipepal.readthedocs.io/)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
--->
+# Pipepal
 
-[![Tests](https://github.com/sensein/pipepal/workflows/Tests/badge.svg)](https://github.com/sensein/pipepal/actions?workflow=Tests)
+[![Build](https://github.com/sensein/pipepal/actions/workflows/test.yaml/badge.svg?branch=main)](https://github.com/sensein/pipepal/actions/workflows/test.yaml?query=branch%3Amain)
+[![codecov](https://codecov.io/gh/sensein/pipepal/branch/main/graph/badge.svg?token=22HWWFWPW5)](https://codecov.io/gh/sensein/pipepal)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+
 [![PyPI](https://img.shields.io/pypi/v/pipepal.svg)](https://pypi.org/project/pipepal/)
 [![Python Version](https://img.shields.io/pypi/pyversions/pipepal)](https://pypi.org/project/pipepal)
 [![License](https://img.shields.io/pypi/l/pipepal)](https://opensource.org/licenses/Apache-2.0)
 
+[![pages](https://img.shields.io/badge/api-docs-blue)](https://sensein.github.io/pipepal)
 
-# Pipepal
 
 Welcome to the ```pipepal``` repo! This is a Python package that simplifies building pipelines for speech and voice analysis.
 
