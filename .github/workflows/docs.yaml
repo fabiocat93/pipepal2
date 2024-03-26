@@ -2,7 +2,9 @@ name: Build and publish docs
 
 permissions:
   contents: write
-
+  pages: write
+  id-token: write
+  
 on:
   workflow_run:
     workflows: [Python Tests]
