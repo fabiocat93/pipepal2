@@ -37,9 +37,9 @@ pip install git+https://github.com/sensein/pipepal
 ## Quick start
 
 ```Python
-import pipepal
+from pipepal.app import hello_world
 
-pipepal.hello_world()
+hello_world()
 ```
 
 ## To do:
