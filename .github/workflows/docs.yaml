@@ -20,15 +20,15 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest] #, macos-latest, windows-latest
+        os: [ubuntu-latest] # For demonstration, other OSes are commented out
         python-version: ["3.11", "3.10"]
         include:
-        - os: ubuntu-latest
-        python-version: "3.11"
-        deploy: false  
-      - os: ubuntu-latest
-        python-version: "3.10"
-        deploy: true # Only deploy from this configuration
+          - os: ubuntu-latest
+            python-version: "3.11"
+            deploy: false
+          - os: ubuntu-latest
+            python-version: "3.10"
+            deploy: true # Only deploy from this configuration
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -59,6 +59,7 @@ jobs:
         touch docs_build/.nojekyll
       shell: bash
     - name: Publish Docs
+      id: deployment
       if: ${{ matrix.deploy }}
       uses: actions/deploy-pages@v4
       with:
