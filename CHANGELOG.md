@@ -1,3 +1,15 @@
+# 0.0.8 (Wed Mar 27 2024)
+
+#### ⚠️ Pushed to `main`
+
+- docs finally ([@fabiocat93](https://github.com/fabiocat93))
+
+#### Authors: 1
+
+- [@fabiocat93](https://github.com/fabiocat93)
+
+---
+
 # 0.0.7 (Wed Mar 27 2024)
 
 #### ⚠️ Pushed to `main`
