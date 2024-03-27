@@ -1,3 +1,16 @@
+# 0.0.12 (Wed Mar 27 2024)
+
+#### 🐛 Bug Fix
+
+- testing doc version 2 [#4](https://github.com/fabiocat93/pipepal/pull/4) ([@fabiocat93](https://github.com/fabiocat93))
+- testing doc version [#3](https://github.com/fabiocat93/pipepal/pull/3) ([@fabiocat93](https://github.com/fabiocat93))
+
+#### Authors: 1
+
+- [@fabiocat93](https://github.com/fabiocat93)
+
+---
+
 # 0.0.11 (Wed Mar 27 2024)
 
 #### 🐛 Bug Fix
