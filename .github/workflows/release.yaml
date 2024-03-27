@@ -6,6 +6,8 @@ on:
     branches:
       - main
 
+# TODO: CONNECT THIS TO TESTS!!!!
+
 env:
   AUTO_VERSION: v11.1.1
 
