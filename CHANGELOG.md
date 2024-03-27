@@ -1,3 +1,15 @@
+# 0.0.10 (Wed Mar 27 2024)
+
+#### 🐛 Bug Fix
+
+- autorc [#1](https://github.com/fabiocat93/pipepal/pull/1) ([@fabiocat93](https://github.com/fabiocat93))
+
+#### Authors: 1
+
+- [@fabiocat93](https://github.com/fabiocat93)
+
+---
+
 # 0.0.9 (Wed Mar 27 2024)
 
 #### ⚠️ Pushed to `main`
