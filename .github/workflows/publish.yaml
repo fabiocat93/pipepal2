@@ -35,6 +35,9 @@ jobs:
         key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
         restore-keys: |
           ${{ runner.os }}-poetry-
+    - name: Install poetry dynamic versioning tool
+      run: pipx inject poetry "poetry-dynamic-versioning[plugin]"
+      shell: bash
     - name: Install dependencies with Poetry
       run: poetry install --with dev
       shell: bash
