@@ -6,6 +6,10 @@ on:
     branches:
       - main
 
+# on:
+#  release:
+#    types: [published]
+
 jobs:
   pypi-release:
     runs-on: ${{ matrix.os }}
@@ -38,7 +42,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-poetry-
     - name: Install poetry dynamic versioning tool
-      run: pipx inject poetry "poetry-dynamic-versioning[plugin]"
+      run: poetry self add "poetry-dynamic-versioning[plugin]"
       shell: bash
     - name: Install dependencies with Poetry
       run: poetry install --with dev
@@ -49,3 +53,7 @@ jobs:
     - name: Publish to PyPI
       run: poetry publish --build
       shell: bash
+
+
+
+
