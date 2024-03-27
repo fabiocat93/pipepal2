@@ -1,17 +1,16 @@
 name: Build and Publish Docs
 
+on:
+  workflow_run:
+    workflows: ["Publish to PyPI"]
+    branches: [main]
+    types:
+      - completed
+
 permissions:
   contents: write
   pages: write
   id-token: write
-
-on:
-  workflow_run:
-    workflows: [Python Tests]
-    types:
-    - completed
-    branches:
-    - main
 
 jobs:
   build-docs:

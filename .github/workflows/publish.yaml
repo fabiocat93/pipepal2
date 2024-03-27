@@ -1,14 +1,8 @@
 name: Publish to PyPI
 
 on:
-  # ATM, this is the closest trigger to a PR merging
-  push:
-    branches:
-      - main
-
-# on:
-#  release:
-#    types: [published]
+  release:
+    types: [published]
 
 jobs:
   pypi-release:
