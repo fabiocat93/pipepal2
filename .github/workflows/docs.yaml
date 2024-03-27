@@ -6,10 +6,8 @@ permissions:
   id-token: write
 
 on:
-  workflow_run:
-    workflows: ["Publish to PyPI"]
-    branches: [main]
-    types: [completed]
+  release:
+    types: [published]
 
 jobs:
   build-docs:

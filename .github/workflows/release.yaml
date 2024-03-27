@@ -8,13 +8,13 @@ on:
     types: [completed]
 
 env:
-  AUTO_VERSION: v11.1.1
+  AUTO_VERSION: v11.1.2
 
 jobs:
   auto-release:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
-        
+
     steps:
       - uses: actions/checkout@v4
 
