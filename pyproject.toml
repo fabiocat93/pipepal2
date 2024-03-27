@@ -26,6 +26,7 @@ packages = [{include = "pipepal", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+click = "^8.1.7"
 
 [tool.poetry.group.dev]
 optional = true
@@ -95,6 +96,9 @@ convention = "google"
 [tool.ruff.lint.per-file-ignores]
 "src/tests/**/*.py" = []
 
+[tool.poetry.scripts]
+pipepal-cli = "pipepal.cli:main"
+
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
@@ -103,6 +107,8 @@ line-ending = "auto"
 
 [tool.poetry-dynamic-versioning]
 enable = true
+vcs = "git"
+style = "pep440"
 [build-system]
 requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
 build-backend = "poetry_dynamic_versioning.backend"
