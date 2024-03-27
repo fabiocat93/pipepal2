@@ -4,7 +4,7 @@ It then calls this function if the script is run as the main program.
 """
 
 def hello_world() -> None:
-    """Prints hello world...."""
+    """Prints hello world."""
     print("Hello World!")
 
 if __name__ == "__main__":
