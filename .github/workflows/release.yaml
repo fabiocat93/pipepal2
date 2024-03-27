@@ -7,7 +7,7 @@ on:
       - main
 
 env:
-  AUTO_VERSION: v11.1.2
+  AUTO_VERSION: v11.1.1
 
 jobs:
   auto-release:
@@ -41,3 +41,4 @@ jobs:
           ~/auto shipit -vv
         env:
           GH_TOKEN: ${{ secrets.AUTO_ORG_TOKEN }}
+
