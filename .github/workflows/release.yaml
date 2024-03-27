@@ -13,9 +13,8 @@ env:
 jobs:
   auto-release:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
-    needs: check_tests_status
     runs-on: ubuntu-latest
-    
+        
     steps:
       - uses: actions/checkout@v4
 
